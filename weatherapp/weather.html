@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHERETHER</title>
+    <link rel="stylesheet" href="./weather.css">
+</head>
+<body>
+    <div class="header">
+        <h1>WHERETHER</h1>
+        <div>
+            <input type="text" id="input" placeholder="Cidade...">
+            <button id="search">Buscar</button>
+        </div>
+    </div>
+
+    <main>
+        <div class="weather">
+            <h2 id="cidade">São Paulo, Brasil</h2>
+            <div class="temp-box">
+                <img src="./icon.png" alt="" id="img">
+                <p id="temperatura">26 °C</p>
+            </div> 
+            <span id="clouds">Céu limpo</span>
+        </div>
+        <div class="divider1"></div>
+        <div class="forecastH">
+            <p class="cast-header">Próximas previsões</p>
+            <div class="templist">
+                <div class="next">
+                    <div>
+                       <p class="time">10:41</p> 
+                       <p class="graus">24 °C / 26 °C</p>
+                    </div>
+                    <p class="desc">Céu limpo</p>
+                </div>
+
+                <div class="next">
+                    <div>
+                       <p class="time">12:41</p> 
+                       <p class="graus">26 °C / 28 °C</p>
+                    </div>
+                    <p class="desc">Nuvens se formando</p>
+                </div>
+
+                <div class="next">
+                    <div>
+                       <p class="time">14:41</p> 
+                       <p class="graus">25 °C / 27 °C</p>
+                    </div>
+                    <p class="desc">Pancadas de chuva</p>
+                </div>
+
+                <div class="next">
+                    <div>
+                       <p class="time">16:41</p> 
+                       <p class="graus">17 °C / 26 °C</p>
+                    </div>
+                    <p class="desc">Pancadas de chuva</p>
+                </div>
+
+                <div class="next">
+                    <div>
+                       <p class="time">18:41</p> 
+                       <p class="graus">17 °C / 26 °C</p>
+                    </div>
+                    <p class="desc">Pancadas de chuva</p>
+                </div>
+
+
+            </div>
+        </div>
+    </main>
+
+    <div class="forecastD">
+        <div class="divider2"></div>
+        <p class="cast-header"> Previsão para os próximos 4 dias</p>
+        <div class="weekF">
+            <div class="dayF">
+                <p class="date">Sexta-feira 27 Janeiro</p>
+                <p class="graus">17 °C / 26 °C</p>
+                <p class="desc">Céu limpo</p>
+            </div>
+            <div class="dayF">
+                <p class="date">Sábado 28 Janeiro</p>
+                <p class="graus">17 °C / 23 °C</p>
+                <p class="desc">Pancadas de chuva</p>
+            </div>
+            <div class="dayF">
+                <p class="date">Domingo 29 Janeiro</p>
+                <p class="graus">17 °C / 24 °C</p>
+                <p class="desc">Pancadas de chuva</p>
+            </div>
+            <div class="dayF">
+                <p class="date">Segunda 30 Janeiro</p>
+                <p class="graus">18 °C / 26 °C</p>
+                <p class="desc">Pancadas de chuva</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./weather.js" type="module"></script>
+</body>
+</html>
